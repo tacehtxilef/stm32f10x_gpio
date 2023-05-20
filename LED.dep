@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<project>
+  <fileVersion>2</fileVersion>
+  <fileChecksum>776190793</fileChecksum>
+  <configuration>
+    <name>EMB_FLASH</name>
+    <outputs>
+      <file>$PROJ_DIR$\EMB_FLASH\Obj\LED.pbd</file>
+      <file>$PROJ_DIR$\startup_stm32f10x_md.s</file>
+      <file>$TOOLKIT_DIR$\inc\DLib_Defaults.h</file>
+      <file>$PROJ_DIR$\EMB_FLASH\Obj\main.o</file>
+      <file>$PROJ_DIR$\EMB_FLASH\Exe\LED.out</file>
+      <file>$PROJ_DIR$\EMB_FLASH\Obj\main.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\yvals.h</file>
+      <file>$PROJ_DIR$\config.h</file>
+      <file>$PROJ_DIR$\main.c</file>
+      <file>$TOOLKIT_DIR$\lib\dl7M_tl_in.a</file>
+      <file>$TOOLKIT_DIR$\inc\DLib_Threads.h</file>
+      <file>$TOOLKIT_DIR$\lib\shb_l.a</file>
+      <file>$TOOLKIT_DIR$\inc\ycheck.h</file>
+      <file>$TOOLKIT_DIR$\lib\rt7M_tl.a</file>
+      <file>$TOOLKIT_DIR$\inc\stdint.h</file>
+      <file>$TOOLKIT_DIR$\inc\xencoding_limits.h</file>
+      <file>$TOOLKIT_DIR$\inc\DLib_Config_Full.h</file>
+      <file>$TOOLKIT_DIR$\inc\DLib_Product.h</file>
+      <file>$PROJ_DIR$\config\STM32F10x_FLASH.icf</file>
+      <file>$PROJ_DIR$\EMB_FLASH\Exe\LED.hex</file>
+      <file>$PROJ_DIR$\EMB_FLASH\Obj\startup_stm32f10x_md.o</file>
+    </outputs>
+    <file>
+      <name>[ROOT_NODE]</name>
+      <outputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 4</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\EMB_FLASH\Obj\LED.pbd</name>
+      <inputs>
+        <tool>
+          <name>BILINK</name>
+          <file> 5</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\startup_stm32f10x_md.s</name>
+      <outputs>
+        <tool>
+          <name>AARM</name>
+          <file> 20</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\EMB_FLASH\Exe\LED.out</name>
+      <outputs>
+        <tool>
+          <name>OBJCOPY</name>
+          <file> 19</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 18 3 20 11 13 9</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\main.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 5</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 3</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 14 12 6 2 17 15 10 7</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 14 12 6 2 16 17 15 10 7</file>
+        </tool>
+      </inputs>
+    </file>
+  </configuration>
+</project>
+
+
